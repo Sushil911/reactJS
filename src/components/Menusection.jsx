@@ -10,9 +10,9 @@ const Menusection = () => {
     </h1>
     </div>
     <div className='flex justify-center items-center'>
-    <CardComponent foodname="Burger" price="$15" />
-    <CardComponent foodname="Pizza" price="$10" />
-    <CardComponent foodname="Cold Coffee" price="$30" />
+    <CardComponent foodname="Burger" price="$15" source="https://shorturl.at/H78nN" />
+    <CardComponent foodname="Pizza" price="$10" source="https://shorturl.at/pmsjL" />
+    <CardComponent foodname="Cold Coffee" price="$30" source="https://shorturl.at/aJyhm   " />
     </div>
     </>
   )

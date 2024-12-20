@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from './components/Navbar'
 import Menusection from './components/Menusection'
 import Specialsection from './components/Specialsection'
 import Aboutsection from './components/Aboutsection'
 import Contactsection from './components/Contactsection'
 import Herosection from './components/herosection'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const App = () => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
+  
   return (
     <>
     <div>
@@ -16,7 +22,7 @@ const App = () => {
         <Navbar />
         </nav>
       </header>
-      <section id='menu'>
+      <section id='menu' data-aos='fade-up' data-aos-delay="100">
         <Menusection />
       </section>
       <section id='special'>
