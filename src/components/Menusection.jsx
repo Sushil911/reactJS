@@ -14,6 +14,11 @@ const Menusection = () => {
     <CardComponent foodname="Pizza" price="$10" source="https://shorturl.at/pmsjL" />
     <CardComponent foodname="Cold Coffee" price="$30" source="https://shorturl.at/aJyhm   " />
     </div>
+    <div className='flex justify-center '>
+      <CardComponent foodname="momo" price="$7" source="https://shorturl.at/UvydS" />
+      <CardComponent foodname="chowmein" price="$3" source="https://shorturl.at/j5whD" />
+      <CardComponent foodname="panipuri" price="$20" source="https://shorturl.at/Ooslt"/>
+    </div>
     </>
   )
 }
