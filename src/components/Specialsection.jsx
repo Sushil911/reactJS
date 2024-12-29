@@ -5,10 +5,7 @@ return ( <>
   <p className='ml-[700px]'>
   Chef's Special
   </p>
-  <div>
-
-  </div>
-    <div className='flex justify-center items-center m-5 gap-3'>
+  <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ml-[40px]'>
       <div className='shadow-lg w-[400px] h-[150px] rounded-xl'>
         <h1 className='text-lg font-extralight'>
         Truffle Burger

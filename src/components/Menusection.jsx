@@ -1,6 +1,6 @@
 import React from 'react'
 import CardComponent from './CardComponent'
-
+import foodItems from '../constants/fooditem'
 const Menusection = () => {
   return (
     <>
@@ -9,15 +9,15 @@ const Menusection = () => {
     Our Menu
     </h1>
     </div>
-    <div className='flex justify-center items-center'>
-    <CardComponent foodname="Burger" price="$15" source="https://shorturl.at/H78nN" />
-    <CardComponent foodname="Pizza" price="$10" source="https://shorturl.at/pmsjL" />
-    <CardComponent foodname="Cold Coffee" price="$30" source="https://shorturl.at/aJyhm   " />
-    </div>
-    <div className='flex justify-center '>
-      <CardComponent foodname="momo" price="$7" source="https://shorturl.at/UvydS" />
-      <CardComponent foodname="chowmein" price="$3" source="https://shorturl.at/j5whD" />
-      <CardComponent foodname="panipuri" price="$20" source="https://shorturl.at/Ooslt"/>
+    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 m-7 ml-[130px]'>
+    {foodItems.map((item)=>(
+      <CardComponent
+      id={item.id}
+      foodname={item.foodname}
+      price={item.price}
+      source={item.source}
+      />
+    ))}
     </div>
     </>
   )
